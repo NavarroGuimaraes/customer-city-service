@@ -80,10 +80,10 @@ Após a execução do projeto, a documentação das rotas estará disponível em
     {
         "id": 4,
         "name": "Roberta Silva",
-        "gender": "MULHER_TRANS",
-        "age": 21,
+        "gender": "MULHER",
+        "age": 22,
         "state": "Pernambuco",
-        "birth_date": "20/04/1999",
+        "birth_date": "12/04/1998",
         "city_name": "Olinda"
     }
 ]
