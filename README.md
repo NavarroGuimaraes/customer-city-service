@@ -17,15 +17,15 @@
 
 ## :rocket: Sobre o desafio
 
-Nesse desafio, desenvolvi uma api capaz cadastrar cidades e clientes. Toda a api foi construída utilziando o ecossistema Spring. 
+Nesse desafio, desenvolvi uma API capaz cadastrar cidades e clientes. Toda a API foi construída utilziando o ecossistema Spring. 
 
 ### Base do desafio
 
-Todo a api foi desenvolvida com base nos requisitos descritos no repositório disponível na seguinte url: **[Acessar Repositório](https://github.com/gustavodallanora/spring-boot-interview)**.
+Todo a API foi desenvolvida com base nos requisitos descritos no repositório disponível na seguinte url: **[Acessar Repositório](https://github.com/gustavodallanora/spring-boot-interview)**.
 
 ### Preparando o ambiente
 
-Antes de tudo, é importante ter instalado o **[Maven](http://maven.apache.org/download.cgi)** e no mínimo a versão 8 do **[Java jdk](https://openjdk.java.net/install/)** instalada em sua máquina. Para checar se ambas estão instaladas, é possível executar os comandos a seguir para verificar as versões do java: `java -version` e maven: `mvn -version`.
+Antes de tudo, é importante ter instalado o **[Maven](http://maven.apache.org/download.cgi)** e no mínimo a versão 8 do **[Java JDK](https://openjdk.java.net/install/)** instalada em sua máquina. Para checar se ambas estão instaladas, é possível executar os comandos a seguir para verificar as versões do java: `java -version` e maven: `mvn -version`.
 
 também é recomendável possuir instalada uma IDE. Durante o desenvolvimento dessa aplicação fiz uso do **[STS](https://spring.io/tools)**, mas você pode utilizar a IDE de sua preferência.
 
@@ -38,7 +38,7 @@ No STS, você pode executar pelo seguinte caminho **customer-city-service > nave
 
 Alternativamente, você pode executar através da View **Boot Dashboard** disponível no sts. Caso não esteja disponível em seu STS, **Vá até Window > Show View > Other > Digite Boot Dashboard e selecione** 
 
-Caso você prefira executar pela linha de comando, você pode executar a api rodando `mvn spring-boot:run` dentro da pasta do projeto.
+Caso você prefira executar pela linha de comando, você pode executar a API rodando `mvn spring-boot:run` dentro da pasta do projeto.
 
 ### Rotas da aplicação
 
