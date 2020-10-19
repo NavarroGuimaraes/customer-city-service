@@ -17,7 +17,7 @@
 
 ## :rocket: Sobre o desafio
 
-Nesse desafio, desenvolvi uma API capaz cadastrar cidades e clientes. Toda a API foi construída utilziando o ecossistema Spring. 
+Nesse desafio, desenvolvi uma API capaz cadastrar cidades e clientes. Toda a API foi construída utilizando o ecossistema Spring. 
 
 ### Base do desafio
 
