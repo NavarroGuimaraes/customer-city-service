@@ -89,10 +89,31 @@ public class CityService {
 
 		try {
 			
+			City persistedCity = cityRepository.findByNameAndState(cityRequestDTO.getName()
+					, cityRequestDTO.getState());
+			
+			if (persistedCity != null ) {
+				
+				//if city already exists, then we will just activate it. 
+				if (persistedCity.isDeleted()) {
+					
+					persistedCity.setDeleted(false);
+					persistedCity = cityRepository.save(persistedCity);
+					return ResponseEntity
+							.status(HttpStatus.OK)
+							.body(mapper.map(persistedCity, CityResponseDTO.class));
+					
+				}
+				
+				return ResponseEntity.status(HttpStatus.CONFLICT).body("City Already Exists");
+			}
+			
 			City city = mapper.map(cityRequestDTO, City.class);	
 			city = cityRepository.save(city);
 
-			return ResponseEntity.ok(mapper.map(city, CityResponseDTO.class));
+			return ResponseEntity
+					.status(HttpStatus.CREATED)
+					.body(mapper.map(city, CityResponseDTO.class));
 
 		} catch (Exception e) {
 			
@@ -154,9 +175,9 @@ public class CityService {
 		}
 		
 	}
-
-	public City findFirstCityEqualsIgnoreCase(String name) {
-		return cityRepository.findFirstByNameIgnoreCase(name);
+	
+	public City findFirstCityEqualsIgnoreCaseAndIsDeletedIsFalse(String name) {
+		return cityRepository.findFirstByNameIgnoreCaseAndIsDeletedIsFalse(name);
 	}
 
 }

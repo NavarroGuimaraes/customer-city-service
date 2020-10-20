@@ -24,7 +24,7 @@ public interface CityRepository extends CrudRepository<City, Long>{
 	
 	public List<City> findByNameLikeAndIsDeletedIsFalse(String name);
 	
-	public City findFirstByNameIgnoreCase(String name);
+	public 	City findFirstByNameIgnoreCaseAndIsDeletedIsFalse(String name);
 	
 	public Optional<City> findByIdAndIsDeletedIsFalse(Long id);
 
@@ -33,4 +33,10 @@ public interface CityRepository extends CrudRepository<City, Long>{
 	@Transactional
 	@Query("UPDATE City c SET c.isDeleted = 1 WHERE c.id = ?1")
 	int deleteCityById(Long id);
+
+	@Query(value="SELECT c FROM City c"
+			+ " WHERE c.name = ?1"
+			+ " AND c.state = ?2")
+	City findByNameAndState(String name, String state);
+
 }

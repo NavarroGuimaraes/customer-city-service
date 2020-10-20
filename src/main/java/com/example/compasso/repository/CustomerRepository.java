@@ -20,5 +20,8 @@ public interface CustomerRepository extends CrudRepository<Customer, Long>{
 	@Transactional
 	@Query("UPDATE Customer c SET c.isDeleted = 1 WHERE c.id = ?1")
 	int deleteCustomerById(Long id);
+	
+	Customer findFirstByNameContainingIgnoreCaseAndIsDeletedIsFalse(String name);
+
 
 }

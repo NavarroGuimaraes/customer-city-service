@@ -77,7 +77,8 @@ public class CustomerRestController {
 		}
 	}
 	
-	@ApiOperation(value="Altera o cliente passado como parâmetro")
+	@ApiOperation(value="Altera o cliente passado como parâmetro."
+			+ " Se o cliente não existir, será criado um novo com o id passado")
 	@PutMapping
 	public ResponseEntity<?> update(@RequestBody @Valid UpdateCustomerRequestDTO customerDTO){
 		

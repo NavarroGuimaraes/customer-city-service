@@ -38,7 +38,7 @@ public class CustomerService {
 		
 		try {
 			
-			City city = cityService.findFirstCityEqualsIgnoreCase(customerRequestDTO.getCityName());
+			City city = cityService.findFirstCityEqualsIgnoreCaseAndIsDeletedIsFalse(customerRequestDTO.getCityName());
 
 			if (city == null) {
 				return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("City not found");
@@ -129,7 +129,7 @@ public class CustomerService {
 		try {
 			
 			//checks if the city exists
-			City city = cityService.findFirstCityEqualsIgnoreCase(customerDTO.getCityName());
+			City city = cityService.findFirstCityEqualsIgnoreCaseAndIsDeletedIsFalse(customerDTO.getCityName());
 
 			if (city == null) {
 				return ResponseEntity.status(HttpStatus.NOT_FOUND).body("City not found");
