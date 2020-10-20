@@ -93,7 +93,7 @@ Após a execução do projeto, a documentação das rotas estará disponível em
 ## Banco de dados
 
 
-⚠️ Toda a aplicação foi feita utilizando o banco H2. Isso significa que o banco de dados é inicializado (e criado) novamente sempre que a aplicaço sobe. Todos os registros são guardados na memória.
+⚠️ Toda a aplicação foi feita utilizando o banco H2. Isso significa que o banco de dados é inicializado (e criado) novamente sempre que a aplicação sobe. Todos os registros são guardados na memória.
 
 Para visualizar os dados, após subir a aplicação, é necessário acessar o endereço **http://localhost:8080/h2-console/.**  
 Para realizar o login na aplicação, basta inserir a url `jdbc:h2:C:/data/example`. O usuário permanece `sa` e a senha permanece vazia (sem nada escrito). ⚠️
