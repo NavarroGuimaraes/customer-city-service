@@ -36,7 +36,7 @@ Antes de executarmos a API, vamos executar o comando `mvn clean install` na past
 Para iniciar a API nós podemos fazer uso de nossa IDE. 
 No STS, você pode executar pelo seguinte caminho **customer-city-service > navegue pelas pastas src/main/java > Clique com o botão direito em CustomerCityServiceApplication.java > Vá até o menu Run as > Selecione a opção Spring boot app**. 
 
-Alternativamente, você pode executar através da View **Boot Dashboard** disponível no sts. Caso não esteja disponível em seu STS, **Vá até Window > Show View > Other > Digite Boot Dashboard e selecione** 
+Alternativamente, você pode executar através da View **Boot Dashboard** disponível no sts. Caso não esteja disponível em seu STS, **Vá até Window > Show View > Other > Digite Boot Dashboard e o selecione**. Após isso o boot dashboard irá estar disponível e exibitá todos os serviços disponíveis para serem inicializados. 
 
 Caso você prefira executar pela linha de comando, você pode executar a API rodando `mvn spring-boot:run` dentro da pasta do projeto.
 
