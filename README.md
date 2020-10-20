@@ -53,7 +53,7 @@ Após a execução do projeto, a documentação das rotas estará disponível em
 }
 ```
 
-- **`POST /customer`**: Essa rota irá criar um cliente recebendo o objeto descrito abaixo e retornará os dados caso os mesmos tenham sido criados. ⚠️ Os gêneros disponíveis vão de um array de 0 a 4. São eles consecutivamente: Homem, Mulher, Homem trans, Mulher trans, não identificar; ⚠️
+- **`POST /customer`**: Essa rota irá criar um cliente recebendo o objeto descrito abaixo e retornará os dados caso os mesmos tenham sido criados. ⚠️ Os gêneros disponíveis são parte de um array de 0 a 4. São eles consecutivamente: Homem, Mulher, Homem trans, Mulher trans, não identificar; ⚠️
 
 ```json
 {
