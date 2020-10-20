@@ -100,7 +100,7 @@ Para realizar o login na aplicação, basta inserir a url `jdbc:h2:C:/data/examp
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](WIP:LICENSE) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [TODO:LICENSE](LICENSE) para mais detalhes.
 
 ---
 
